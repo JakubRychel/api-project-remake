@@ -36,7 +36,7 @@ h5 {
   line-height: 1.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar {
     border-bottom: none !important;
   }

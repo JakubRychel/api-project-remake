@@ -13,19 +13,19 @@ function Header() {
 
   return (<>
     <button
-      className='navbar-toggler position-fixed d-md-none d-block'
+      className='navbar-toggler position-fixed d-lg-none d-block'
       onClick={() => setNavbarState(prevState => !prevState)}
     >
       <i class={navbarState ? 'bi bi-x' : 'bi bi-list'}></i>
     </button>
-    <header className={`container-fluid sticky-md-top d-flex flex-row justify-content-center align-items-center ${
-      navbarState ? 'd-block' : 'd-none d-md-block'
+    <header className={`container-fluid sticky-lg-top d-flex flex-row justify-content-center align-items-center ${
+      navbarState ? 'd-block' : 'd-none d-lg-block'
     } bg-nav`}>
-      <nav className="container navbar flex-row py-0 justify-content-center justify-content-md-between">
-        <Link to="/" className="navbar-brand my-0 py-0 d-none d-md-block">
+      <nav className="container navbar flex-row py-0 justify-content-center justify-content-lg-between">
+        <Link to="/" className="navbar-brand my-0 py-0 d-none d-lg-block">
           <h1 className="my-0 py-0">Projekt egzaminacyjny</h1>
         </Link>
-        <ul className="nav flex-column flex-md-row align-items-center">
+        <ul className="nav flex-column flex-lg-row align-items-center">
           <li className="nav-item"><Link to="/" className="btn menu-link my-2" onClick={handleLinkClick}>Strona główna</Link></li>
           <li className="nav-item"><Link to="/iss" className="btn menu-link my-2" onClick={handleLinkClick}>Pozycja ISS</Link></li>
           <li className="nav-item"><Link to="/nbp" className="btn menu-link my-2" onClick={handleLinkClick}>Kursy walut NBP</Link></li>
