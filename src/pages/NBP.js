@@ -5,7 +5,7 @@ import Subpage from './Subpage';
 function Currency({ code }) {
   const [data, setData] = useState();
 
-  const apiUrl = code => `https://cors-anywhere.herokuapp.com/http://api.nbp.pl/api/exchangerates/rates/a/${code}/last/7?format=json`;
+  const apiUrl = code => `https://corsproxy.io/?http://api.nbp.pl/api/exchangerates/rates/a/${code}/last/7?format=json`;
 
   useEffect(() => {
     const fetchCurrencyData = async () => {
