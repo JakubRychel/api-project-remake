@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/api-remake/static/css/main.1fb8be32.css",
-    "main.js": "/api-remake/static/js/main.58272412.js",
+    "main.js": "/api-remake/static/js/main.59dfa495.js",
     "static/js/453.a13c92ee.chunk.js": "/api-remake/static/js/453.a13c92ee.chunk.js",
     "static/media/bootstrap-icons.woff?": "/api-remake/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/api-remake/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/api-remake/index.html",
     "main.1fb8be32.css.map": "/api-remake/static/css/main.1fb8be32.css.map",
-    "main.58272412.js.map": "/api-remake/static/js/main.58272412.js.map",
+    "main.59dfa495.js.map": "/api-remake/static/js/main.59dfa495.js.map",
     "453.a13c92ee.chunk.js.map": "/api-remake/static/js/453.a13c92ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fb8be32.css",
-    "static/js/main.58272412.js"
+    "static/js/main.59dfa495.js"
   ]
 }
