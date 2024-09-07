@@ -1,5 +1,6 @@
 {
   "name": "api-remake",
+  "homepage": "https://jakubrychel.github.io/api-remake/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
