@@ -34,7 +34,7 @@ function Map({ latitude, longitude }) {
 }
 
 function ISS() {
-  const API_URL = 'http://api.open-notify.org/iss-now.json';
+  const API_URL = 'https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json';
 
   const [position, setPosition] = useState({
     latitude: '0',
