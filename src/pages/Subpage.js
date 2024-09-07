@@ -11,9 +11,7 @@ function Subpage({ header, children }) {
         </div>
       </div>
       <div className="container py-3 page-main">
-        <div className="row">
-          {children}
-        </div>
+        {children}
       </div>
     </section>
   );

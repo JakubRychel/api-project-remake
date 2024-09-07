@@ -34,7 +34,7 @@ function Map({ latitude, longitude }) {
 }
 
 function ISS() {
-  const API_URL = 'https://corsproxy.io/?http://api.open-notify.org/iss-now.json';
+  const API_URL = 'http://api.open-notify.org/iss-now.json';
 
   const [position, setPosition] = useState({
     latitude: '0',
@@ -77,33 +77,35 @@ function ISS() {
 
   return (
     <Subpage header="Pozycja ISS">
-      <div className="col-xs-12 col-md-4">
-        <div><h4 className="my-3">Współrzędne geograficzne</h4></div>
-        <div>
-          <table className="data">
-            <thead>
-              <tr>
-                <th>Współrzędna</th>
-                <th>Wartość</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Szerokość</td>
-                <td>{decimalToDMS(position.latitude, 'latitude')}</td>
-              </tr>
-              <tr>
-                <td>Długość</td>
-                <td>{decimalToDMS(position.longitude, 'longitude')}</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="row">
+        <div className="col-xs-12 col-md-4">
+          <div><h4 className="my-3">Współrzędne geograficzne</h4></div>
+          <div>
+            <table className="data">
+              <thead>
+                <tr>
+                  <th>Współrzędna</th>
+                  <th>Wartość</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Szerokość</td>
+                  <td>{decimalToDMS(position.latitude, 'latitude')}</td>
+                </tr>
+                <tr>
+                  <td>Długość</td>
+                  <td>{decimalToDMS(position.longitude, 'longitude')}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div className="col-xs-12 col-md-8">
-        <div><h4 className="my-3">Pozycja na mapie</h4></div>
-        <div>
-          <Map latitude={position.latitude} longitude={position.longitude} />
+        <div className="col-xs-12 col-md-8">
+          <div><h4 className="my-3">Pozycja na mapie</h4></div>
+          <div>
+            <Map latitude={position.latitude} longitude={position.longitude} />
+          </div>
         </div>
       </div>
     </Subpage>

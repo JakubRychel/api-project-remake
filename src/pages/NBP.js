@@ -5,7 +5,7 @@ import Subpage from './Subpage';
 function Currency({ code }) {
   const [data, setData] = useState();
 
-  const apiUrl = code => `https://corsproxy.io/?http://api.nbp.pl/api/exchangerates/rates/a/${code}/last/7?format=json`;
+  const apiUrl = code => `http://api.nbp.pl/api/exchangerates/rates/a/${code}/last/7?format=json`;
 
   useEffect(() => {
     const fetchCurrencyData = async () => {
@@ -66,10 +66,12 @@ function Currency({ code }) {
 function NBP() {
   return (
     <Subpage header="Kursy walut NBP">
-      <Currency code="EUR" />
-      <Currency code="USD" />
-      <Currency code="GBP" />
-      <Currency code="CHF" />
+      <div class="row">
+        <Currency code="EUR" />
+        <Currency code="USD" />
+        <Currency code="GBP" />
+        <Currency code="CHF" />
+      </div>
     </Subpage>
   );
 }
