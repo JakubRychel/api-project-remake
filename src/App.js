@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Main from './pages/Main';
 import ISS from './pages/ISS';
 import NBP from './pages/NBP';
