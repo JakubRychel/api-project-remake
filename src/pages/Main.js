@@ -20,7 +20,7 @@ function Main() {
             </div>
           </div>
           
-          <div className="col-xs-12 col-md-6 py-5">
+          <div className="col-xs-12 col-lg-6 py-5">
             <img src="./img/landing.svg" style={{ width: '100%' }} />
           </div>
         </div>
