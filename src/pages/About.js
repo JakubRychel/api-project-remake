@@ -3,7 +3,7 @@ import Subpage from './Subpage';
 
 function Item({ src, children }) {
   return (
-    <div className="col-xs-12 col-sm-4 col-md-3 tile">
+    <div className="col-xs-12 col-md-4 col-lg-3 tile">
       <img src={src} width="150" height="150" className="my-2" />
       <h5>{children}</h5>
     </div>
