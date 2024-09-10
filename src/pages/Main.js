@@ -21,7 +21,7 @@ function Main() {
           </div>
           
           <div className="col-xs-12 col-md-6 py-5">
-            <img src="img/landing.svg" width="100%" />
+            <img src="./img/landing.svg" width="100%" />
           </div>
         </div>
       </div>

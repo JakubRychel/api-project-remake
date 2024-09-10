@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Main from './pages/Main';
 import ISS from './pages/ISS';
 import NBP from './pages/NBP';
@@ -12,15 +12,25 @@ function Header() {
   const handleLinkClick = () => setNavbarState(false);
 
   return (<>
-    <button
-      className='navbar-toggler position-fixed d-lg-none d-block'
-      onClick={() => setNavbarState(prevState => !prevState)}
-    >
-      <i class={navbarState ? 'bi bi-x' : 'bi bi-list'}></i>
-    </button>
-    <header className={`container-fluid sticky-lg-top d-flex flex-row justify-content-center align-items-center ${
-      navbarState ? 'd-block' : 'd-none d-lg-block'
+    <header className={`container-fluid sticky-lg-top d-flex align-items-center ${
+      navbarState ? 'expanded' : ''
     } bg-nav`}>
+      <button
+        className='navbar-toggler position-fixed d-lg-none d-block'
+        onClick={() => setNavbarState(prevState => !prevState)}
+      >
+        <svg className="ham hamRotate" viewBox="0 0 100 100" width="50">
+          <path
+            className="line top"
+            d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path
+            className="line middle"
+            d="m 70,50 h -40" />
+          <path
+            className="line bottom"
+            d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+      </button>
       <nav className="container navbar flex-row py-0 justify-content-center justify-content-lg-between">
         <Link to="/" className="navbar-brand my-0 py-0 d-none d-lg-block">
           <h1 className="my-0 py-0">Projekt egzaminacyjny</h1>
